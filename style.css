@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&family=Asap+Condensed&display=swap');
+
+* {
+    margin: 0px;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.menu {
+    background-color: rgb(200, 148, 248);
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;   
+    text-shadow: 0 1px 0 rgb(26, 23, 23), 0 2px 0, 0 3px 0 rgb(187, 190, 250);
+    ;
+}
+
+.menu a {
+    color: rgb(59, 44, 44);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu a:hover {
+    background-color: rgb(233, 199, 199);
+    font-size: large;
+}
+
+.inicio {
+    overflow: hidden;
+    background-color: rgb(221, 144, 120);
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Asap Condensed', sans-serif;
+    padding: 5px;
+}
+
+section {
+    width: 1290px;
+    margin: auto;
+    height: auto;
+    background: rgb(255, 245, 237);
+    margin: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.parrafo {
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+    padding: 15px;
+
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+    padding: 15px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.imagen {
+    width: 400px;
+    height: auto;
+    display: block;
+    /*Centrado*/
+    margin: 0 0 0 3%;
+    box-shadow: 3px 3px 0 rgb(49, 24, 24);
+    border: 1px solid #551313;
+    margin-top: 2px;
+    margin: left;
+    /*Efecto de redondeado en la imagen == border-radius: 100px; */
+}
+
+table {
+    width: 60%;
+    float: right;
+    border-spacing: 3px;
+    /*Con espacio*/
+    margin: right;
+    margin: 0 5% 0 0;
+}
+
+tr,td {
+    width: 10%;
+    border: 2px solid rgb(80, 13, 8);
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    
+}
+
+caption {
+    /*background: url(https://es.calcuworld.com/wp-content/uploads/sites/2/2018/04/cantidad-paises-asia.jpg); == PARA PONER UN FONDO CON IMAGEN DE GOOGLE*/
+    font-size: 20px;
+    border: 2px solid rgb(255, 254, 254);
+    background: linear-gradient(rgb(173, 101, 101), rgb(173, 173, 216));
+    text-align: center;
+
+}
+
+.encabezado {
+    border: 1px solid rgb(170, 99, 94);
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer {
+    background-color: rgb(255, 250, 182);
+    color: rgb(20, 19, 19);
+}
+
+footer img {
+    width: 20px;
+    margin: 0 1% 0 0;
+    
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.colum2{
+    margin-top: 20px;
+    margin: 0 60px 0;
+    display:inline-block
+}
+.colum2 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.colum2 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-align: center;
+}
+.colum3{
+    margin-top: 20px;
+    margin: 0% 16%;
+    text-decoration: none;
+    display:inline-block;
+
+}
+.colum3 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum3 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-align: center;
+    text-decoration:none;
+}
+.colum4{
+    margin-top: 20px;
+    margin: 0% 80px;
+    text-decoration: none;
+    display:inline-block
+
+}
+.colum4 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum4 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-decoration:none;
+    text-align: center;
+}
