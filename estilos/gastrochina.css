@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+*{ /*Selector Universal/Asterisco*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+.titulo{
+    background-image: url(../imagenes/comida-tipica-de-china\ \(1\).jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #f0f0f0;
+    text-align: left;
+    margin: 0 5%;
+    font-family: 'Bellefair', serif;
+    text-shadow: 1px 2px 3px rgb(226, 141, 61);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+p{
+    color: #f0f0f0;
+    font-size: 20px;
+    margin: 0 6%;
+}
+.inicio{
+margin-top:50px;
+position: relative;
+}
+
+.search input{
+    width: 200px;
+    float: right;
+    margin: 5%;
+}
+/*CONFIGURACIÓN DE BARRA DE MENU*/
+.principal{
+    width: 100%;
+    height: 50px;
+    background: rgb(226, 172, 25);
+    padding: 1px 16px;
+}
+.barramenu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100px;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    height: 80%;
+    display: flex;
+}
+nav  ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+/*PARA LA IMAGEN DE INCIO - HOME*/
+nav > ul >li:first-child>a{
+    background-image: url(../imagenes/home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav > ul >li:first-child:hover >a{
+    background-image: url(../imagenes/home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+/*PARA CONFIGURAR LA BARRA DE MENU*/
+}
+nav > ul >li >a{
+    width: 100px;
+    margin: 10px;
+    height: 25px;
+    display: flex;
+    color: white;
+    padding: 14px;
+    transition: all 300ms ease;
+    align-items: center;
+}
+nav > ul >li >a:hover{
+    transform: scale(1.0);
+    background: rgba(221, 184, 63, 0.774);
+    box-shadow: 0px 0px 10px 0px rgb(245, 199, 71)
+}
+
+/*SUB MENU*/
+nav ul li ul{
+    width: 200px;   
+    background: white;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    visibility: hidden; /*PARA Q LA BARRA DE COREA ESTE OCULTO*/
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+/*PARA QUE TENGA EL EFECTO DEL SUB MENU EN LA BARRA*/
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 2;
+    top: 50px;
+}
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+nav ul li ul li a{
+    display: block;
+    color: rgb(204, 154, 60);
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px; /*CREAR SEPARACION ABAJO*/
+    font-size: 14px;
+    text-transform: uppercase; /*PARA QUE SEAN MAYULUSCULA */
+}
+nav ul li ul li a:hover{
+    background:  rgba(255, 250, 174, 0.623);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    padding-left:30px ;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,5);
+}
+hr{
+    color: rgb(167, 105, 36);
+}
+main{
+    height: auto;
+    margin: 0 2%;
+    padding: 25px 20px;
+    margin-top: 5px;
+}
+.text1{
+    width: 40%;
+    margin: 10px 9%;
+    float: left;
+    text-align: justify;
+    font-weight: bold;
+    padding: 0 10px 0 0;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+
+}
+img{
+    
+    width:380px;
+}
+h2{
+    margin: auto;
+    margin: 0 6%;
+    font-size: 25px;
+}
+img:hover{
+    opacity: .5;
+    transition: .1s;
+}
+footer {
+    background-color: rgb(250, 207, 127);
+    color: rgb(20, 19, 19);
+}
+
+footer img {
+    width: 20px;
+    margin: 0 1% 0 0;
+    
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.colum2{
+    margin-top: 20px;
+    margin: 0 60px 0;
+    display:inline-block;
+    color: black;
+}
+.colum2 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color: black;
+}
+.colum2 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+.colum3{
+    margin-top: 20px;
+    margin: 0% 16%;
+    text-decoration: none;
+    display:inline-block;
+    color: black;
+    font-weight: bold;
+}
+.colum3 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum3 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-align: center;
+    text-decoration:none;
+}
+.colum4{
+    margin-top: 20px;
+    margin: 0% 80px;
+    text-decoration: none;
+    display:inline-block;
+    font-weight: bold;
+    color: black;
+
+}
+.colum4 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum4 label{
+    margin-top: 1px;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 15px;
+    text-decoration:none;
+    text-align: center;
+}
