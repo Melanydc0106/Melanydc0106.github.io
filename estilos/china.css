@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Farsan&family=Gowun+Dodum&family=Recursive:wght@300&family=Saira+Semi+Condensed:wght@100&display=swap');
 *{ /*Selector Universal/Asterisco*/
     margin: 0px;
     padding: 0px;
@@ -6,26 +7,27 @@
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
-.header div{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: ghostwhite;
-}
-.headersuperior{
-    max-width: 1200px;
-    margin: auto;
+header img{
     display: flex;
-    align-items: center;  
+    width: 300px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+header {
+    text-transform: uppercase;
+    display: flex; 
     justify-content: space-between;
+    min-height: 80%; 
+    align-items: center;
+}
+header input{
+    width: 300px;
+    padding: 10px;
+    margin-right: 50px;
 }
 .logo img{
     width: 250px;
-}
-.search input{
-    width: 300px;
-    padding: 10px;
 }
 .principal{
     width: 100%;
@@ -77,6 +79,8 @@ nav > ul >li >a{
     padding: 14px;
     transition: all 300ms ease;
     align-items: center;
+    font-size: 14px;
+    font-family: 'Gowun Dodum', sans-serif;
 }
 nav > ul >li >a:hover{
     transform: scale(1.0);
@@ -120,8 +124,9 @@ nav ul li ul li a{
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px; /*CREAR SEPARACION ABAJO*/
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase; /*PARA QUE SEAN MAYULUSCULA */
+    font-family: 'Gowun Dodum', sans-serif;
 }
 nav ul li ul li a:hover{
     background:  rgba(255, 174, 174, 0.623);
@@ -170,11 +175,14 @@ nav ul li ul li a:hover{
 /*ARTICULO */
 hr{
     border-color: rgb(71, 71, 61);
+    margin: 0 2%;
 }
 main{
     background-color: #f0f0f0;
     padding: 40px 20px;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 article{
     max-width: 1200px;
@@ -206,9 +214,12 @@ img:hover{
     transition: .1s;
 }
 
+/*PIE DE PÁGINA*/
 footer {
     background-color: rgb(255, 250, 182);
     color: rgb(20, 19, 19);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer img {
@@ -227,13 +238,13 @@ footer ul {
     margin-top: 20px;
     margin: 0 60px 0;
     display:inline-block;
-    color: black;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 .colum2 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
-    color: black;
 }
 .colum2 label{
     margin-top: 1px;
@@ -248,10 +259,12 @@ footer ul {
     text-decoration: none;
     display:inline-block;
     color: black;
+    font-weight: 700;
+    font-size: 16px;
 }
 .colum3 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }
@@ -267,11 +280,14 @@ footer ul {
     margin: 0% 80px;
     text-decoration: none;
     display:inline-block;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
 
 }
 .colum4 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }

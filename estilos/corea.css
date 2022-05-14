@@ -6,27 +6,26 @@
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
-.header div{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: ghostwhite;
-}
-.headersuperior{
-    max-width: 1200px;
-    margin: auto;
+header img{
     display: flex;
-    align-items: center;  
+    width: 300px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+header {
+    text-transform: uppercase;
+    display: flex; 
     justify-content: space-between;
+    min-height: 80%; 
+    align-items: center;
 }
-.logo img{
-    width: 250px;
-}
-.search input{
+header input{
     width: 300px;
     padding: 10px;
+    margin-right: 50px;
 }
+
 .principal{
     width: 100%;
     height: 50px;
@@ -136,11 +135,14 @@ nav ul li ul li a:hover{
 /*ARTICULO */
 hr{
     border-color: rgb(71, 71, 61);
+    margin: 0 2%;
 }
 main{
     background-color: #f0f0f0;
     padding: 40px 20px;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 article{
     max-width: 1200px;

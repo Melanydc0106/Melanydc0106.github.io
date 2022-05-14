@@ -6,6 +6,7 @@
 
 * {
     margin: 0px;
+    text-decoration: none;
 }
 
 html {
@@ -124,6 +125,8 @@ caption {
 footer {
     background-color: rgb(255, 250, 182);
     color: rgb(20, 19, 19);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer img {
@@ -144,8 +147,8 @@ footer ul {
     display:inline-block
 }
 .colum2 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
 }
 .colum2 label{
@@ -162,8 +165,8 @@ footer ul {
 
 }
 .colum3 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }
@@ -182,8 +185,8 @@ footer ul {
 
 }
 .colum4 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }
