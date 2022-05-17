@@ -182,8 +182,10 @@ img:hover{
 }
 
 footer {
-    background-color: rgb(255, 250, 182);
+    background-color: rgba(128, 190, 247, 0.842);
     color: rgb(20, 19, 19);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer img {
@@ -202,13 +204,13 @@ footer ul {
     margin-top: 20px;
     margin: 0 60px 0;
     display:inline-block;
-    color: black;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 .colum2 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
-    color: black;
 }
 .colum2 label{
     margin-top: 1px;
@@ -223,10 +225,12 @@ footer ul {
     text-decoration: none;
     display:inline-block;
     color: black;
+    font-weight: 700;
+    font-size: 16px;
 }
 .colum3 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }
@@ -242,11 +246,14 @@ footer ul {
     margin: 0% 80px;
     text-decoration: none;
     display:inline-block;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
 
 }
 .colum4 img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px;
     text-decoration:none;
 }
