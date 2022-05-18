@@ -21,8 +21,9 @@ html {
 
 .menu li {
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;   
-    text-shadow: 0 1px 0 rgb(26, 23, 23), 0 2px 0, 0 3px 0 rgb(187, 190, 250);
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bold;  
+    text-shadow: 0 1px 0 rgb(26, 23, 23), 0 2px 0, 0 4px 0 rgb(214, 216, 245);
     ;
 }
 
@@ -35,21 +36,22 @@ html {
 }
 
 .menu a:hover {
-    background-color: rgb(233, 199, 199);
+    background-color: rgb(238, 189, 235);
     font-size: large;
 }
 
 .inicio {
     overflow: hidden;
-    background-color: rgb(221, 144, 120);
+    background-color: rgb(252, 185, 165);
     text-align: center;
 
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Asap Condensed', sans-serif;
     padding: 5px;
+    padding-left: 40px;
 }
 
 section {
@@ -107,10 +109,16 @@ tr,td {
 }
 
 caption {
-    /*background: url(https://es.calcuworld.com/wp-content/uploads/sites/2/2018/04/cantidad-paises-asia.jpg); == PARA PONER UN FONDO CON IMAGEN DE GOOGLE*/
+    background: url(https://thumbs.dreamstime.com/b/el-cielo-rosado-y-violeta-color-pastel-al-atardecer-desenfocado-165594629.jpg);
     font-size: 20px;
-    border: 2px solid rgb(255, 254, 254);
-    background: linear-gradient(rgb(173, 101, 101), rgb(173, 173, 216));
+    border: 2px solid rgb(70, 12, 12);
+    font-family: 'Asap Condensed', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-style:initial;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
     text-align: center;
 
 }
