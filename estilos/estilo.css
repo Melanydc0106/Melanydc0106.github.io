@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&family=Asap+Condensed&display=swap');
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkorange;
+    min-height: 80%;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 85px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+ul{
+    list-style-type: circle;
+}
+body{
+    margin: 0;
+    font-family: 'Asap Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+nav a{
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 16px;
+}
+nav a:hover{
+    color:rgb(15, 15, 15)
+}
+article{
+    max-width: 1260px;
+    margin: 20px auto;
+}
+article p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300px;
+}
+img{
+    margin: 0 25%;
+    margin-top: 40px;
+}
+img:hover{
+    opacity: .7;
+    transition: .3s;
+}
+footer {
+    background-color: rgba(255, 140, 0, 0.884);
+    color: rgb(20, 19, 19);
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+footer img {
+    width: 20px;
+    margin: 0 1% 0 0;
+    
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.colum2{
+    margin-top: 20px;
+    margin: 0 59px 0;
+    display:inline-block;
+    color: rgb(255, 246, 246);
+    text-decoration: none;
+    
+}
+.colum2 img{
+    width: 25px;
+    height: 25px;
+    margin-top: 3%;
+    text-align: center;
+}
+.colum2 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0 0 2%;
+    color: rgb(255, 249, 249);
+}
+.colum3{
+    margin-top: 20px;
+    margin: 0% 20%;
+    text-decoration: none;
+    display:inline-block;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+.colum3 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum3 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    text-decoration:none;
+}
+.colum4{
+    margin-top: 20px;
+    margin: 0% 90px;
+    text-decoration: none;
+    display:inline-block;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+
+}
+.colum4 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum4 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    text-align: center;
+}
+@media (max-width:400px){
+    header{
+        flex-direction: column;
+    }
+    h2{
+        color: rgb(220, 220, 220);
+    }
+    nav a{
+        padding-bottom: 10px;
+    }
+}
