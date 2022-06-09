@@ -1,140 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&family=Asap+Condensed&display=swap');
-
-* {
-    margin: 0px;
-    text-decoration: none;
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkorange;
+    min-height: 80%;
+    align-items: center;
 }
-
-html {
-    background-color: rgb(255, 255, 255);
+h2{
+    font-size: 40px;
 }
-
-
-.menu {
-    background-color: rgb(200, 148, 248);
-    text-align: center;
+.logo{
+    display: flex;
+    align-items: center;
 }
-
-.menu li {
-    display: inline-block;
-    font-family: 'Quicksand', sans-serif; 
-    font-weight: bold;  
-    text-shadow: 0 1px 0 rgb(26, 23, 23), 0 2px 0, 0 4px 0 rgb(214, 216, 245);
-    ;
+.logo img{
+    height: 85px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-
-.menu a {
-    color: rgb(59, 44, 44);
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-    font-family: 'Quicksand', sans-serif;
+ul{
+    list-style-type: circle;
 }
-
-.menu a:hover {
-    background-color: rgb(238, 189, 235);
-    font-size: large;
-}
-
-.inicio {
-    overflow: hidden;
-    background-color: rgb(252, 185, 165);
-    text-align: center;
-
-}
-
-h1 {
-    font-size: 60px;
+body{
+    margin: 0;
     font-family: 'Asap Condensed', sans-serif;
-    padding: 5px;
-    padding-left: 40px;
 }
-
-section {
-    width: 1290px;
-    margin: auto;
-    height: auto;
-    background: rgb(255, 245, 237);
-    margin: left;
-    font-family: 'Quicksand', sans-serif;
+a{
+    text-decoration: none;
+    color: blanchedalmond;
 }
-
-.parrafo {
-    color: black;
+nav a{
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 16px;
+}
+nav a:hover{
+    color:rgb(15, 15, 15)
+}
+article{
+    max-width: 1260px;
+    margin: 20px auto;
+}
+article p{
+    margin-top: 20px;
     text-align: justify;
     font-size: 16px;
-    padding: 15px;
-
+    font-weight: 300px;
 }
-
-p {
-    color: black;
-    text-align: justify;
-    font-size: 16px;
-    padding: 15px;
-    font-family: 'Asap Condensed', sans-serif;
+img{
+    margin: 0 25%;
+    margin-top: 40px;
 }
-
-.imagen {
-    width: 400px;
-    height: auto;
-    display: block;
-    /*Centrado*/
-    margin: 0 0 0 3%;
-    box-shadow: 3px 3px 0 rgb(49, 24, 24);
-    border: 1px solid #551313;
-    margin-top: 2px;
-    margin: left;
-    /*Efecto de redondeado en la imagen == border-radius: 100px; */
+img:hover{
+    opacity: .7;
+    transition: .3s;
 }
-
-table {
-    width: 60%;
-    float: right;
-    border-spacing: 3px;
-    margin: right;
-    margin: 0 5% 0 0;
-}
-
-tr,td {
-    width: 10%;
-    border: 2px solid rgb(80, 13, 8);
-    text-align: center;
-    font-family: 'Asap Condensed', sans-serif;
-    
-}
-
-caption {
-    background: url(https://thumbs.dreamstime.com/b/el-cielo-rosado-y-violeta-color-pastel-al-atardecer-desenfocado-165594629.jpg);
-    font-size: 21px;
-    border: 2px solid rgb(70, 12, 12);
-    font-family: 'Asap Condensed', sans-serif;
-    font-weight: 500;
-    color: black;
-    font-style:initial;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    text-align: center;
-
-}
-
-.encabezado {
-    border: 1px solid rgb(170, 99, 94);
-    text-align: center;
-    padding: 10px;
-
-}
-
 footer {
-    background-color: rgb(255, 250, 182);
+    background-color: rgba(255, 140, 0, 0.884);
     color: rgb(20, 19, 19);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 footer img {
@@ -152,25 +81,32 @@ footer ul {
 .colum2{
     margin-top: 20px;
     margin: 0 60px 0;
-    display:inline-block
+    display:inline-block;
+    color: rgb(255, 246, 246);
+    text-decoration: none;
+    
 }
 .colum2 img{
     width: 25px;
     height: 25px;
-    margin: 0 10px;
+    margin-top: 3%;
+    text-align: center;
 }
 .colum2 label{
     margin-top: 1px;
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Asap Condensed', sans-serif;
     font-size: 15px;
-    text-align: center;
+    margin: 0 0 2%;
+    color: rgb(255, 249, 249);
 }
 .colum3{
     margin-top: 20px;
-    margin: 0% 16%;
+    margin: 0% 20%;
     text-decoration: none;
     display:inline-block;
-
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
 }
 .colum3 img{
     width: 25px;
@@ -180,16 +116,20 @@ footer ul {
 }
 .colum3 label{
     margin-top: 1px;
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Asap Condensed', sans-serif;
     font-size: 15px;
     text-align: center;
+    color: black;
     text-decoration:none;
 }
 .colum4{
     margin-top: 20px;
-    margin: 0% 80px;
+    margin: 0% 90px;
     text-decoration: none;
-    display:inline-block
+    display:inline-block;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
 
 }
 .colum4 img{
@@ -200,8 +140,19 @@ footer ul {
 }
 .colum4 label{
     margin-top: 1px;
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Asap Condensed', sans-serif;
     font-size: 15px;
     text-decoration:none;
     text-align: center;
+}
+@media (max-width:400px){
+    header{
+        flex-direction: column;
+    }
+    h2{
+        color: rgb(220, 220, 220);
+    }
+    nav a{
+        padding-bottom: 10px;
+    }
 }
