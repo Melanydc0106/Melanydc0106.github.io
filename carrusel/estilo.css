@@ -16,7 +16,7 @@ header h1{
     padding-left: 30px;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     padding-right: 49%;
     font-family: 'Asap Condensed', sans-serif;
     text-transform: none;
@@ -25,6 +25,13 @@ header h1{
     float: left;
     padding-left: 70px;
     font-size: 30px;
+}
+button{
+    background-color: rgb(100, 83, 83);
+    border-color: blanchedalmond;
+    font-size: 14px;
+    color: white;
+    font-family: 'Asap Condensed', sans-serif;
 }
 .rigth{
     float: right;

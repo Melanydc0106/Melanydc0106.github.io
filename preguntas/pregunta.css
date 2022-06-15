@@ -6,7 +6,7 @@
     font-family: 'Asap Condensed', sans-serif;
     text-decoration: none;
 }
-.titulo{
+header{
     background-image: url(../imagenes/shre.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -15,14 +15,40 @@
 
 h1 {
     font-size: 70px;
-    color: #ffffff;
-    text-align: left;
-    font-family: 'Bellefair', serif;
     text-shadow: 1px 2px 6px rgb(63, 2, 2);
     font-family: 'Asap Condensed', sans-serif;
+    background-color: linear-gradient(rgb(82, 25, 25), rgb(233, 176, 102));
+    color: rgb(238, 138, 67);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
 }
-button{
-    font-size: 15px;
+@keyframes text {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.inicio{
+    float: left;
+    font-size: 16px;
+    margin-top: 1%;
+    text-shadow: 1px 0 2px rgb(2, 2, 2);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 2%;
+}
+.anterior{
+    float: right;
+    text-shadow: 1px 0 2px rgb(2, 2, 2);
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 1%;
+    margin-right: 2%;
 }
 .left{
     float: left;
@@ -44,11 +70,15 @@ button{
     font-size: 18px;
 }
 input{
+    padding-left: 100px;
+    padding-right: 10px;
     font-size: 20px;
 }
 .buton{
     font-size: 20px;
     background-color: rgba(85, 85, 235, 0.678);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 img{
@@ -67,7 +97,7 @@ footer {
 }
 
 footer img {
-    width: 20px;
+    width: 10px;
     margin: 0 1% 0 0;
 }
 
@@ -87,8 +117,8 @@ footer ul {
     text-decoration: none;
 }
 .colum2 img{
-    width: 40px;
-    height: 30spx;
+    width: 25px;
+    height: 25spx;
     margin-top: 3%;
     text-align: center;
 }
@@ -108,7 +138,7 @@ footer ul {
     font-size: 14px;
 }
 .colum3 img{
-    width: 40px;
+    width: 25px;
     height: 25px;
     margin: 0 10px;
     text-decoration:none;
@@ -131,7 +161,7 @@ footer ul {
 
 }
 .colum4 img{
-    width: 40px;
+    width: 25px;
     height: 25px;
     margin: 0 10px;
     text-decoration:none;
