@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&family=Asap+Condensed&display=swap');
+body{
+    margin: 0;
+    list-style-type: none;
+}
+header {
+    background-color: brown;
+    text-transform: uppercase;
+    display: flex; 
+    justify-content: space-between;
+    min-height: 80%; 
+    align-items: center;
+}
+header h1{
+    padding-top: 3px;
+    padding-left: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-right: 49%;
+    font-family: 'Asap Condensed', sans-serif;
+    text-transform: none;
+}
+.left{
+    float: left;
+    padding-left: 70px;
+    font-size: 30px;
+}
+.rigth{
+    float: right;
+    padding-right: 40px;
+    font-size: 30px;
+}
+.carrusel{
+    height: 100vh; /*HORIZONTAL Y VERTICAL, QUE NO SE SALGA DE LA PAGINA*/
+    display: flex; /*PARA QUE LAS IMAGENES SE ORDEN DE ACUERDO A US MEDIDA*/
+    align-items: center; /*PARA QUE ESTE EN MEDIO DE LA ESTRUCTURA*/
+}
+
+.items{
+    display: flex;
+    /*CUANDO UNA FIGURA LLEGUE A UNA PARTE Y SE RECORTE, SOLO CON OVERFLOW
+    EN ESTE CASO SE UTILIZO OVERFLOW-X, ES PARA QUE APREZCA UNA BARRA DE DESPLAZAMIENTO*/
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 60px 0;
+    padding-bottom: 9%;
+}
+.skz{
+    min-width: 250px;
+    max-width: 250px;
+    padding-left: 1px;
+    /*EL TAMAÑO ALTO DE LA ESTRUCTURA*/
+    height: 250px; 
+    font-size: 17px;
+    font-family: 'Asap Condensed', sans-serif;
+    /*Borde externo de la figura*/
+    outline: 1px solid rgb(8, 8, 8);
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 14%;
+}
+.texto{
+    margin-left: 5px;
+    margin-right: 7px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    /*PARA ESPECIFICAR EL COMO SE DEBE DE CAMABIAR EL TAMAÑO DE UN <IMG>*/
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+footer {
+    background-color: rgba(165, 19, 19, 0.884);
+    color: rgb(255, 250, 250);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+footer img {
+    width: 20px;
+    margin: 0 1% 0 0;
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.colum2{
+    margin-top: 20px;
+    margin: 0 60px 0;
+    font-style: oblique;
+    display:inline-block;
+    color: rgb(255, 246, 246);
+    text-decoration: none;
+}
+.colum2 img{
+    width: 25px;
+    height: 25px;
+    margin-top: 3%;
+    text-align: center;
+}
+.colum2 label{
+    margin-top: 7px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0 0 5%;
+    color: rgb(255, 249, 249);
+}
+.colum3{
+    margin-top: 20px;
+    margin: 0% 20%;
+    font-style: oblique;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 14px;
+}
+.colum3 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum3 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+.colum4{
+    margin-top: 20px;
+    margin: 0% 90px;
+    font-style: oblique;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 14px;
+
+}
+.colum4 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum4 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    text-align: center;
+}
+/*PARA LOS BOTONES
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%; para que se posicione al centro de las imagenes
+    width: auto; /*Para que el contenido tengo una medida correspondiente de acuerdo al conteneder
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; /*PARA QUE EL USUSARIO NO PUEDA SELECIONAR ESE ICONO
+    border: solid #fff 2px;
+
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 6px;
+}
+.prev:hover, .next:hover{
+    background-color: black;
+}
+.elements{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: gray;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+.active, .quadrate:hover{
+    background-color: #fff;
+}*/
