@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ti Aspetto offerte</title>
+</head>
+<body>
+    <h1>Ingresa a nuestra página desde tu cuenta de google, para que veas las ofertas de nuestra carta</h1>
+    <p>Haz un clic en el boton y podrass elegir el correo que deseas iniciar</p>
+    <button id="google">Iniciar Sesión</button>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { GoogleAuthProvider, getAuth, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB7Jfuqd6Dfko9Z6G2Yr8JvchY6-7wECl0",
+            authDomain: "proyecto-ti-aspetto.firebaseapp.com",
+            projectId: "proyecto-ti-aspetto",
+            storageBucket: "proyecto-ti-aspetto.appspot.com",
+            messagingSenderId: "284770769085",
+            appId: "1:284770769085:web:4fc308c8ddaf348f083fd4"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider(app);
+
+        document.getElementById("google").addEventListener("click", function(){
+            signInWithRedirect(auth, provider);
+            getRedirectResult(auth)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access Google APIs.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+
+                // The signed-in user info.
+                const user = result.user;
+                console.log("Ya puedes ingresar a tus cuentas")
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+                console.log("Haz realizado un mal paso")
+            });
+
+        })
+    </script>
+</body>
+</html>

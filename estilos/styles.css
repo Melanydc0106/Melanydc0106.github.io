@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alex+Brush&family=Allura&family=Arima:wght@100&family=Berkshire+Swash&family=Gantari:wght@100&family=Ms+Madi&family=Ropa+Sans&family=Tangerine&family=The+Nautigal&family=Unica+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    font-family: 'Alex Brush', cursive;
+    float: left;
+    padding-left: 55px;
+    font-size: 40px;
+    color: rgb(255, 248, 248);
+    text-shadow: 4px 4px 2px rgb(82, 21, 21);
+}
+.subparrafo{
+    font-family: 'Alex Brush', cursive;
+    float: left;
+    font-size: 40px;
+    padding-left: 25px;
+    color: rgb(255, 248, 248);
+    text-shadow: 2px 2px 2px rgb(82, 21, 21);
+}
+body{
+    background-color: #ecf4fb;
+}
+header{
+    background-image: url(https://restaurantsanceferino.com/wp-content/themes/sanceferino/img/menu-fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 600px;
+    padding-top: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(235, 178, 54);
+    text-shadow: 1px 1px 2px rgb(10, 10, 10);
+}
+.subtitulo{
+    padding-left: 47%;
+    font-size: 20px;
+    font-family: 'Unica One', cursive;
+}
+
+/*h1::before{
+    content: "";
+    display: block;
+    width: 100;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    z-index: -1;
+}
+h1 span{
+    background-color: #ecf4fb;
+    padding: 0px;
+}
+.img-gallery{
+    width: 100%;
+    margin: 8px auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+img:hover{
+    opacity: .7;
+    transition: .1s;
+}
+
+.subparrafo{
+    font-size: 55px;
+    padding-left: 38%;
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    color: rgb(136, 41, 41);
+}
+
+h2{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 6px;
+}
+hr{
+    margin-left: 60% ;
+    float: right;
+    margin-right: 130px;
+}
+h3{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    float: right;
+    font-weight: bold;
+    margin-left: 65% ;
+    margin-right: 130px;
+}
+.sabores{
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-left: 65% ;
+    margin-right: 130px;
+}
+.sabores1{
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-left: 65% ;
+    margin-right: 130px;
+}*/
+
+.contenedor {
+	width: 70%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.evento {
+	display: flex;
+	/* alinea los elementos del contenedor flexible */
+	justify-content: space-between;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+.foto {
+	width: 42%;
+	border: 10px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 20px;
+	font-weight: 500;
+    font-family: 'Unica One', cursive;
+}
+
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+/* Representa elementos cuya posición numérica en una serie de hermanos es impar */
+.evento:nth-child(even) {
+	flex-direction: row-reverse;
+}
+/*SIRVE PARA QUE LA FLECHA SE DIRIJA HACIA EL CENTRO*/
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
+
+footer {
+    background-color: rgba(165, 19, 19, 0.884);
+    color: rgb(255, 250, 250);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+footer img {
+    width: 20px;
+    margin: 0 1% 0 0;
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.colum2{
+    margin-top: 20px;
+    margin: 0 60px 0;
+    font-style: oblique;
+    display:inline-block;
+    color: rgb(255, 246, 246);
+    text-decoration: none;
+}
+.colum2 img{
+    width: 25px;
+    height: 25px;
+    margin-top: 3%;
+    text-align: center;
+}
+.colum2 label{
+    margin-top: 7px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0 0 5%;
+    color: rgb(255, 249, 249);
+}
+.colum3{
+    margin-top: 20px;
+    margin: 0% 17%;
+    font-style: oblique;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 14px;
+}
+.colum3 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum3 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+.colum4{
+    margin-top: 20px;
+    margin: 0% 90px;
+    font-style: oblique;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 14px;
+
+}
+.colum4 img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    text-decoration:none;
+}
+.colum4 label{
+    margin-top: 1px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    text-align: center;
+}

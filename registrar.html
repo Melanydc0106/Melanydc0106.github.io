@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/pagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registrarte Ti Aspetto</title>
+</head>
+
+<body> 
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Ti Aspetto</h2>
+                <p class="subparrafo"> Para que puedas disfrutar de nuestra carta que tenemos solo para ti, inicia con tu cuenta de google <br> para que puedas visualizar la siguiente página con nuestra carta. <br> <br></p>
+                <button id="google" class="sign-up-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <!--<form class="formulario">
+            <h2 class="create-account">Crea tu cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¡Veras nuestra carta exclusiva solo para tí !</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Registrarse">
+        </form>-->
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { GoogleAuthProvider, getAuth, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB7Jfuqd6Dfko9Z6G2Yr8JvchY6-7wECl0",
+            authDomain: "proyecto-ti-aspetto.firebaseapp.com",
+            projectId: "proyecto-ti-aspetto",
+            storageBucket: "proyecto-ti-aspetto.appspot.com",
+            messagingSenderId: "284770769085",
+            appId: "1:284770769085:web:4fc308c8ddaf348f083fd4"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider(app);
+
+        document.getElementById("google").addEventListener("click", function(){
+            signInWithRedirect(auth, provider);
+            getRedirectResult(auth)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access Google APIs.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+
+                // The signed-in user info.
+                const user = result.user;
+                window.open("/principal.html","Ti Aspetto",)
+
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+                console.log("Haz realizado un mal paso")
+            });
+
+        })
+    </script>
+    <!--<div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>-->
+    <script src="javascrip/pagina.js"></script>
+</body>
+
+</html>
